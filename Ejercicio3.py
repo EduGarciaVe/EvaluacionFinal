@@ -1,5 +1,3 @@
-
-
 def statusRuleta(ruleta):
     print(ruleta)
 
@@ -26,9 +24,6 @@ def obtenerPorcentaje (ruleta, n):
             print(f"El numero {n} ha sido sorteado 0 % de veces")
     else:
         print("Numero ingresado es incorrecto")
-    
-
-
 
 ruleta = [0] * 37
 statusRuleta(ruleta)
@@ -58,13 +53,3 @@ while active:
     elif accion == 4:
         statusRuleta(ruleta)
         print("================================")
-
-
-
-
-
-        
-
-
-
-
