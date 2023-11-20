@@ -16,7 +16,7 @@ def actualizarRuleta (ruleta,n):
     else :
         print (-1)
 
-def porcentajeRuleta (ruleta, n):
+def obtenerPorcentaje (ruleta, n):
     if n >=0 and n <= 36:
         sumaRuleta = sum(ruleta)
         if ruleta[n] > 0:
@@ -53,7 +53,7 @@ while active:
         print("================================")
     elif accion == 3:
         n = int(input("Ingrese numero para calcular porcentaje de sorteo: "))
-        porcentajeRuleta(ruleta, n)
+        obtenerPorcentaje(ruleta, n)
         print("================================")
     elif accion == 4:
         statusRuleta(ruleta)
