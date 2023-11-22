@@ -1,5 +1,7 @@
-def statusRuleta(ruleta):
+def statusRuleta(ruleta, numerosEnRuleta):  
+    print(numerosEnRuleta)
     print(ruleta)
+    
 
 def noHanSalido(ruleta):
     for i in range (len(ruleta)):
@@ -25,8 +27,9 @@ def obtenerPorcentaje (ruleta, n):
     else:
         print("Numero ingresado es incorrecto")
 
+numerosEnRuleta =  list(range(37))
 ruleta = [0] * 37
-statusRuleta(ruleta)
+statusRuleta(ruleta,numerosEnRuleta)
 active = True
 while active:
     validaAccion= True
@@ -51,5 +54,5 @@ while active:
         obtenerPorcentaje(ruleta, n)
         print("================================")
     elif accion == 4:
-        statusRuleta(ruleta)
+        statusRuleta(ruleta,numerosEnRuleta)
         print("================================")
