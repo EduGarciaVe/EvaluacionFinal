@@ -1,20 +1,34 @@
+
+"""La antigua ruleta de casino tenía los números del 0 al 36 y a los jugadores les costaba mucho realizar cálculos 
+    matemáticos para apostar con las mayores probabilidades. Suponiendo que tenemos una lista llamada “ruleta” de 
+    largo 37 y que en cada “casilla” (índice) se almacena la cantidad de veces que ese número salió sorteado 
+    (ej. Si en la casilla 25 hay un 12 significa que el número 25 ha salido 12 veces), se pide que escriba las siguientes funciones:"""
+
 def statusRuleta(ruleta, numerosEnRuleta):  
     print(numerosEnRuleta)
     print(ruleta)
     
+"""noHanSalido(ruleta) que recibe la lista que representa la ruleta e imprime por pantalla 
+    los números que no han sido sorteados (que no han salido)."""
 
 def noHanSalido(ruleta):
     for i in range (len(ruleta)):
         if ruleta[i] == 0:
             print(f"El numero {i}, NO ha salido sorteado")
     
-
+"""actualizarRuleta(ruleta, N) que recibe la lista que representa la ruleta y un número entero “N” y luego suma 1 a la cantidad 
+    de veces que ha sido sorteado un número “N”. Debe validar que el valor de “N” sea un número entre 0 y 36 (ambos inclusive). 
+    Si el número no corresponde al rango estipulado deberá imprimir el valor –1."""
 def actualizarRuleta (ruleta,n):
     if n >=0 and n <= 36:
         ruleta[n] += 1
         print(ruleta[n])
     else :
         print (-1)
+
+"""obtenerPorcentaje(ruleta, N) que recibe la lista que representa la ruleta y un número entero “N” y retorna el 
+    porcentaje (número decimal) de veces que ha sido sorteado un número “N” sobre el total de veces que se ha tirado la ruleta.
+    Asuma que, en este caso, el calor de “N” siempre será número entre 0 y 36 (ambos inclusive) y, por ende, no lo necesita validar."""
 
 def obtenerPorcentaje (ruleta, n):
     if n >=0 and n <= 36:
