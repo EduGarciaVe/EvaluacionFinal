@@ -61,7 +61,7 @@ while active:
     elif accion == 2:
         n = int(input("Ingrese el numero a actualizar: "))
         actualizarRuleta(ruleta,n)
-        statusRuleta(ruleta) 
+        statusRuleta(ruleta,numerosEnRuleta) 
         print("================================")
     elif accion == 3:
         n = int(input("Ingrese numero para calcular porcentaje de sorteo: "))
