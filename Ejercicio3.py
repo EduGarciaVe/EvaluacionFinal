@@ -70,3 +70,5 @@ while active:
     elif accion == 4:
         statusRuleta(ruleta,numerosEnRuleta)
         print("================================")
+
+
